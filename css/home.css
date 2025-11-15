@@ -891,14 +891,10 @@
 
 .categories .dest_item .dest_content {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.95) 0%,
-    rgba(0, 0, 0, 0.7) 40%,
-    rgba(0, 0, 0, 0.3) 70%,
-    transparent 100%
-  );
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #00000085;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -907,7 +903,7 @@
 }
 .categories .dest_item .dest_badge {
   position: absolute;
-  top: 16px;
+  bottom: 16px;
   right: 16px;
   background: rgba(255, 255, 255, 0.95);
   color: var(--header-text-color);

@@ -425,20 +425,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ===== Counter Animation Function =====
     function animateCounter(element) {
-        const target = parseInt(element.textContent);
-        const duration = 2000; // 2 seconds
-        const increment = target / (duration / 16); // 60fps
-        let current = 0;
-        
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-                element.textContent = target;
-                clearInterval(timer);
-            } else {
-                element.textContent = Math.floor(current);
+        const raw = element.textContent.trim();
+        const match = raw.match(/[\d,.]*\.?\d+/);
+        if (!match) return;
+        const numberStr = match[0].replace(/,/g, '');
+        const target = parseFloat(numberStr);
+        const prefix = raw.slice(0, raw.indexOf(match[0]));
+        const suffix = raw.slice(raw.indexOf(match[0]) + match[0].length);
+        const duration = 2000;
+        const startTime = performance.now();
+        const decimals = numberStr.includes('.') ? numberStr.split('.')[1].length : 0;
+        const ease = (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t);
+
+        function step(now) {
+            const progress = Math.min((now - startTime) / duration, 1);
+            const value = target * ease(progress);
+            let display = decimals > 0 ? value.toFixed(decimals) : Math.floor(value).toString();
+            if (progress === 1) {
+                display = decimals > 0 ? target.toFixed(decimals) : String(target);
             }
-        }, 16);
+            element.textContent = prefix + display + suffix;
+            if (progress < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
     }
 
     // ===== Scroll Animations with Intersection Observer =====
