@@ -463,8 +463,8 @@
             </div>
 
             <div class="tour_price">
-              <p>From <span class="price">€45</span></p>
-              <a href="#" class="btn">Explore Tour <i class="fas fa-arrow-right"></i></a>
+              <p>From <span class="price">€45</span> <span class="old_Price">€60</span></p>
+              <a href="#" class="btn"> <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -540,7 +540,7 @@
 
             <div class="tour_price">
               <p>From <span class="price">€65</span></p>
-              <a href="#" class="btn">Explore Tour <i class="fas fa-arrow-right"></i></a>
+              <a href="#" class="btn"> <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -616,10 +616,88 @@
 
             <div class="tour_price">
               <p>From <span class="price">€35</span></p>
-              <a href="#" class="btn">Explore Tour <i class="fas fa-arrow-right"></i></a>
+              <a href="#" class="btn"> <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
+
+        
+        <div class="tours_item card tours_item_sm">
+          <a href="#" class="tours_link"
+            aria-label="View tour: Aswan: Philae Temple, High Dam & Nubian Village Tour"></a>
+          <div class="tour_img">
+            
+            <button class="btn_share" onclick="toggleShare(event)" aria-label="Share tour" aria-expanded="false"
+              aria-haspopup="true" type="button">
+              <i class="fas fa-share-alt" aria-hidden="true"></i>
+            </button>
+
+            <div class="share-dropdown" role="menu">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://egyptra.com/tours" target="_blank"
+                rel="noopener noreferrer" class="share-option" role="menuitem" onclick="event.stopPropagation()">
+                <i class="fab fa-facebook-f" style="color: #1877f2" aria-hidden="true"></i>
+                <span>Facebook</span>
+              </a>
+              <a href="https://twitter.com/intent/tweet?url=https://egyptra.com/tours&text=Amazing Egypt Tours"
+                target="_blank" rel="noopener noreferrer" class="share-option" role="menuitem"
+                onclick="event.stopPropagation()">
+                <i class="fab fa-twitter" style="color: #1da1f2" aria-hidden="true"></i>
+                <span>Twitter</span>
+              </a>
+              <a href="https://wa.me/?text=Amazing Egypt Tours - https://egyptra.com/tours" target="_blank"
+                rel="noopener noreferrer" class="share-option" role="menuitem" onclick="event.stopPropagation()">
+                <i class="fab fa-whatsapp" style="color: #25d366" aria-hidden="true"></i>
+                <span>WhatsApp</span>
+              </a>
+              <button class="share-option" role="menuitem" onclick="copyLink(event, 'https://egyptra.com/tours')"
+                type="button">
+                <i class="fas fa-link" style="color: #6366f1" aria-hidden="true"></i>
+                <span>Copy Link</span>
+              </button>
+            </div>
+
+            <img src="img/photo_6813975525858.webp" loading="lazy" alt="Aswan Philae Temple Tour" />
+          </div>
+
+          <div class="tour_content">
+            <div class="badge_content">
+              <span> <i class="fas fa-leaf"></i> Eco</span>
+            </div>
+            <h6><i class="fas fa-map-marker-alt"></i> Aswan</h6>
+            <h2 class="title">
+              Aswan: Philae Temple, High Dam & Nubian Village Tour
+            </h2>
+            <div class="rate">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="rate_num">4.6</span>
+              <span class="reviews">(654 Reviews)</span>
+            </div>
+
+            <div class="icon_box">
+              <div class="days">
+                <i class="fas fa-calendar-day"></i>
+                <span>5 hours</span>
+              </div>
+
+              <div class="person">
+                <i class="fas fa-user-plus"></i>
+                <span>Family friendly</span>
+              </div>
+            </div>
+
+            <div class="tour_price">
+              <p>From <span class="price">€35</span></p>
+              <a href="#" class="btn"> <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
        <div class="load-more-wrapper">
@@ -632,13 +710,141 @@
   </div>
   <!-- Start Filter Destinations  -->
 
+
+    <section class="top_attractions">
+    <div class="container">
+      <div class="top-attractions-header">
+        <h2 class="head_title">Top-Rated Tours in Sharm El Sheikh</h2>
+        <div class="top-attractions-controls">
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div class="swiper top-attractions-swiper">
+        <div class="swiper-wrapper">
+          <article class="attraction-card swiper-slide">
+            <img class="card-img" src="img/about1.webp" alt="Colosseum">
+            <span class="card-badge">Attractions</span>
+            <h3 class="card-title">Colosseum</h3>
+            <span class="card-price">From $21</span>
+          </article>
+
+          <article class="attraction-card swiper-slide">
+            <img class="card-img" src="img/about2.webp" alt="Roman Forum (Foro Romano)">
+            <span class="card-badge">Attractions</span>
+            <h3 class="card-title">Roman Forum (Foro Romano)</h3>
+            <span class="card-price">From $21</span>
+          </article>
+
+          <article class="attraction-card swiper-slide">
+            <img class="card-img" src="img/bghero.webp" alt="Sistine Chapel">
+            <span class="card-badge">Attractions</span>
+            <h3 class="card-title">Sistine Chapel</h3>
+            <span class="card-price">From $21</span>
+          </article>
+
+          <article class="attraction-card swiper-slide">
+            <img class="card-img" src="img/photo_6813975525858.webp" alt="Vatican Museums">
+            <span class="card-badge">Attractions</span>
+            <h3 class="card-title">Vatican Museums</h3>
+            <span class="card-price">From $25</span>
+          </article>
+
+          <article class="attraction-card swiper-slide">
+            <img class="card-img" src="img/photo_6813975525858.webp" alt="Pantheon">
+            <span class="card-badge">Attractions</span>
+            <h3 class="card-title">Pantheon</h3>
+            <span class="card-price">From $21</span>
+          </article>
+
+          <article class="attraction-card swiper-slide">
+            <img class="card-img" src="img/about1.webp" alt="Trevi Fountain">
+            <span class="card-badge">Attractions</span>
+            <h3 class="card-title">Trevi Fountain</h3>
+            <span class="card-price">From $21</span>
+          </article>
+
+          <article class="attraction-card swiper-slide">
+            <img class="card-img" src="img/about2.webp" alt="St. Peter's Basilica">
+            <span class="card-badge">Attractions</span>
+            <h3 class="card-title">St. Peter's Basilica</h3>
+            <span class="card-price">From $25</span>
+          </article>
+
+          <article class="attraction-card swiper-slide">
+            <img class="card-img" src="img/9898.webp" alt="Piazza Navona">
+            <span class="card-badge">Attractions</span>
+            <h3 class="card-title">Piazza Navona</h3>
+            <span class="card-price">From $21</span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section class="activities_catalog">
+    <div class="container">
+      <div class="catalog-header text-reveal">
+        <h2 class="head_title">Learn More About Top Activities in Sharm El Sheikh</h2>
+        <p class="head_text">From water sports to cultural experiences, discover curated activities that match every style of adventure and relaxation.</p>
+      </div>
+
+      <div class="catalog-grid animate-stagger">
+        <article class="catalog-card slide-up">
+          <div class="catalog-icon"><i class="fas fa-mask"></i></div>
+          <h3 class="catalog-title">Snorkeling & Diving</h3>
+          <p class="catalog-meta">120+ tours available</p>
+          <a href="#" class="catalog-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="catalog-card slide-up">
+          <div class="catalog-icon"><i class="fas fa-ship"></i></div>
+          <h3 class="catalog-title">Boat Tours</h3>
+          <p class="catalog-meta">85+ tours available</p>
+          <a href="#" class="catalog-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="catalog-card slide-up">
+          <div class="catalog-icon"><i class="fas fa-motorcycle"></i></div>
+          <h3 class="catalog-title">Desert Safari</h3>
+          <p class="catalog-meta">45+ tours available</p>
+          <a href="#" class="catalog-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="catalog-card slide-up">
+          <div class="catalog-icon"><i class="fas fa-water"></i></div>
+          <h3 class="catalog-title">Water Sports</h3>
+          <p class="catalog-meta">45+ tours available</p>
+          <a href="#" class="catalog-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="catalog-card slide-up">
+          <div class="catalog-icon"><i class="fas fa-landmark"></i></div>
+          <h3 class="catalog-title">Cultural Tours</h3>
+          <p class="catalog-meta">35+ tours available</p>
+          <a href="#" class="catalog-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="catalog-card slide-up">
+          <div class="catalog-icon"><i class="fas fa-people-group"></i></div>
+          <h3 class="catalog-title">Family Activities</h3>
+          <p class="catalog-meta">30+ tours available</p>
+          <a href="#" class="catalog-link">Explore <i class="fas fa-arrow-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- StartMore Tours -->
       <section class="tours more_tours">
 
 
     <div class="container swiper mySwiper more_tours_swiper animate-stagger swiper_button_top">
       <div class="head_swiepr">
-        <h2 class="head_title">Recently Viewed Tours</h2>
+        <h2 class="head_title">Top-Rated Tours in Sharm El Sheikh</h2>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
@@ -940,16 +1146,8 @@
             </div>
           </div>
         </div>
-
         
 
-
-
-      </div>
-
-
-      <div class="div_btns btns_btm_sec">
-        <a href="#" class="btn">Explore All Tours <i class="fas fa-arrow-right arrow_rotate"></i></a>
       </div>
 
     </div>
@@ -1099,6 +1297,71 @@
     </div>
   </section>
 
+
+
+  <section class="activities_checklist">
+    <div class="container">
+      <div class="checklist-header text-reveal">
+        <h2 class="head_title">Sharm El Sheikh What to Do – Complete Checklist</h2>
+        <p class="head_text">Planning your trip? Here's your complete guide to Sharm El Sheikh – from must‑do activities to hidden gems for an unforgettable vacation.</p>
+      </div>
+
+      <div class="checklist-grid animate-stagger">
+        <article class="group-card slide-up">
+          <div class="group-head">
+            <span class="group-icon"><i class="fas fa-water"></i></span>
+            <h3 class="group-title">Water Activities (Must‑Do)</h3>
+          </div>
+          <ul class="group-list">
+            <li><i class="fas fa-check"></i> Snorkeling at Ras Mohammed National Park</li>
+            <li><a href="#"><i class="fas fa-check"></i> Diving in Sharm El Sheikh at Tiran Island</a></li>
+            <li><a href="#"><i class="fas fa-check"></i> White Island boat tour in Sharm El Sheikh</a></li>
+            <li><i class="fas fa-check"></i> Submarine tour for non‑swimmers</li>
+            <li><i class="fas fa-check"></i> Glass‑bottom boat experience</li>
+          </ul>
+        </article>
+
+        <article class="group-card slide-up">
+          <div class="group-head">
+            <span class="group-icon"><i class="fas fa-mountain"></i></span>
+            <h3 class="group-title">Desert Adventures (Must‑Do)</h3>
+          </div>
+          <ul class="group-list">
+            <li><a href="#"><i class="fas fa-check"></i> Quad biking safari tour in Sharm El Sheikh</a></li>
+            <li><i class="fas fa-check"></i> Camel ride in the Sinai Desert</li>
+            <li><i class="fas fa-check"></i> Bedouin dinner under the stars</li>
+            <li><i class="fas fa-check"></i> Stargazing in the desert</li>
+          </ul>
+        </article>
+
+        <article class="group-card slide-up">
+          <div class="group-head">
+            <span class="group-icon"><i class="fas fa-route"></i></span>
+            <h3 class="group-title">Day Trips & Excursions</h3>
+          </div>
+          <ul class="group-list">
+            <li><i class="fas fa-check"></i> Cairo day trip (Pyramids & Sphinx)</li>
+            <li><i class="fas fa-check"></i> Luxor day trip (Valley of the Kings)</li>
+            <li><i class="fas fa-check"></i> Mount Sinai sunrise hike</li>
+            <li><i class="fas fa-check"></i> Petra day trip (Jordan)</li>
+          </ul>
+        </article>
+
+        <article class="group-card slide-up">
+          <div class="group-head">
+            <span class="group-icon"><i class="fas fa-person-skiing"></i></span>
+            <h3 class="group-title">Adventure Sports</h3>
+          </div>
+          <ul class="group-list">
+            <li><i class="fas fa-check"></i> Parasailing over the Red Sea</li>
+            <li><i class="fas fa-check"></i> Jet ski adventures</li>
+            <li><i class="fas fa-check"></i> Kitesurfing</li>
+            <li><i class="fas fa-check"></i> Colored Canyon trekking</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
   <section class="reasons_section">
     <div class="container">
       <div class="reasons-header text-reveal">
@@ -1295,6 +1558,8 @@
       </div>
     </div>
   </section>
+
+
 
   <section class="attractions_section">
     <div class="container">
@@ -1730,6 +1995,37 @@
             loadMoreBtn.classList.remove('loading');
           }, 1200);
         });
+      }
+
+      var taSwiper = new Swiper('.top-attractions-swiper', {
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        spaceBetween: 18,
+        navigation: {
+          nextEl: '.top_attractions .swiper-button-next',
+          prevEl: '.top_attractions .swiper-button-prev'
+        },
+        pagination: {
+          el: '.top_attractions .swiper-pagination',
+          type: 'fraction'
+        },
+        breakpoints: {
+          0: { slidesPerView: 1, slidesPerGroup: 1 },
+          540: { slidesPerView: 2, slidesPerGroup: 2 },
+          900: { slidesPerView: 3, slidesPerGroup: 3 },
+          1200: { slidesPerView: 4, slidesPerGroup: 4 }
+        },
+        on: {
+          init: function(sw) { updateFraction(sw); },
+          slideChange: function(sw) { updateFraction(sw); }
+        }
+      });
+
+      function updateFraction(sw) {
+        var totalPages = Math.ceil(sw.slides.length / sw.params.slidesPerGroup);
+        var currentPage = Math.floor(sw.activeIndex / sw.params.slidesPerGroup) + 1;
+        var el = sw.pagination && sw.pagination.el;
+        if (el) { el.innerHTML = currentPage + ' / ' + totalPages; }
       }
     });
   </script>

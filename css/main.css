@@ -627,6 +627,7 @@ footer .container .big_row p {
 footer .container .big_row .icons_footer {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 footer .container .big_row .icons_footer a {
   width: 40px;
@@ -753,10 +754,15 @@ footer .bottom_footer .payment_img {
   footer .bottom_footer .payment_img {
     justify-content: center;
     margin-top: 10px;
+    width: 100%;
+    flex-wrap: wrap;
   }
   footer .container {
     padding: 30px 20px;
     z-index: 2;
+  }
+  footer .bottom_footer p{
+    width: 100%;
   }
 }
 
@@ -894,7 +900,7 @@ footer .bottom_footer .payment_img {
 
 .tours_item .tour_price p .old_Price {
   position: relative;
-  color: var(--secondary-text-color);
+  color: red;
   font-size: 16px;
 }
 
@@ -902,10 +908,12 @@ footer .bottom_footer .payment_img {
   content: "";
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   left: 0;
-  width: 100%;
+  width: 110%;
   height: 1px;
   background: var(--secondary-text-color);
+  rotate: -30deg;
 }
 
 .tours_item .badge_content {
